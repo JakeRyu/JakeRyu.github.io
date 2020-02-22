@@ -18,7 +18,7 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/default.css"
 locale: en-US
 title: "Software Engineering"
-description: "Software Engineering in .NET"
+description: "Clean Code, TDD, Build Pipeline, Containers, Microservice in .NET World"
 baseurl: "/"
 url: "https://jakeryu.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
