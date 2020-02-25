@@ -1,3 +1,11 @@
+---
+layout: home
+limit: 10
+show_excerpts: true
+entries_layout: list
+---
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/JakeRyu/jakeryu.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
