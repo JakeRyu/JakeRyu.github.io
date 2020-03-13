@@ -89,7 +89,7 @@ defaults:
 # Site Author
 author:
   name: Jake Ryu (류지형)
-  picture:
+  picture: /images/lantern.png
   email: jake.ryu@outlook.com
   twitter:
   links:
