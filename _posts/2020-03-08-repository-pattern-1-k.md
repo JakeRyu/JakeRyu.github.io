@@ -2,10 +2,8 @@
 title: "리포지토리 패턴과 엔티티 프레임워크 코어"
 excerpt_separator: "<!--more-->"
 categories:
-  - Korean
+  - ko-KR
 tags:
-  - repository-pattern
-  - unit-of-work-pattern
   - design-pattern
   - ef-core
 ---

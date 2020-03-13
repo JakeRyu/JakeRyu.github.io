@@ -2,7 +2,7 @@
 title: "마이크로서비스와 컨테이너"
 excerpt_separator: "<!--more-->"
 categories:
-  - Korean
+  - ko-KR
 tags:
   - microservices
   - docker

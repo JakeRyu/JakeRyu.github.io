@@ -2,11 +2,10 @@
 title: "Get the repository pattern right"
 excerpt_separator: "<!--more-->"
 categories:
-  - English
+  - en-GB
 tags:
-  - repository-pattern
-  - unit-of-work-pattern
   - design-pattern
+  - ef-core
 ---
 
 The well-known patterns, repository and unit of work patterns lie at the heart of the persistence layer. A repository usually provides CRUD functions on a database entity. In order not to repeat the same tasks across all entities, a generic repository comes in the picture.
