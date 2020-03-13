@@ -17,8 +17,8 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "Software Engineering"
-description: "Clean Code, TDD, Build Pipeline, Containers, Microservice in .NET World"
+title: "Life is another name of learning"
+description: "Solution Architect and .NET Developer with opinions"
 baseurl: "/"
 url: "https://jakeryu.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
@@ -88,9 +88,9 @@ defaults:
 
 # Site Author
 author:
-  name:
+  name: Jake (Jihyung) Ryu
   picture:
-  email:
+  email: jake.ryu@outlook.com
   twitter:
   links:
     - title:
