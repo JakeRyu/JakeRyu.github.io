@@ -17,8 +17,8 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "Life is another name of learning"
-description: "Solution Architect and .NET Developer with opinions"
+title: "Plumbing .NET"
+description: "C#, ASP.NET, Entity Framework with patterns in mind"
 baseurl: "/"
 url: "https://jakeryu.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
