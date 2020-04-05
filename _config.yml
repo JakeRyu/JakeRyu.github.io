@@ -17,7 +17,7 @@
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/default.css"
 locale: en-US
-title: "Plumbing .NET"
+title: "Plumbing .NET Solution"
 description: "C#, ASP.NET, Entity Framework with patterns in mind"
 baseurl: "/"
 url: "https://jakeryu.github.io"
