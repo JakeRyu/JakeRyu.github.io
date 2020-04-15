@@ -33,7 +33,7 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: "UA-160634347-1"
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: "jakeryu"
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 
