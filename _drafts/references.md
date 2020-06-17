@@ -16,4 +16,6 @@ tags:
 
 <p><a href="../../images/jakecompany-dockerhub.png"><img src="../../images/jakecompany-dockerhub.png" alt="jakecompany-dockerhub" class="align-right" style="width:400px"></a></p>
 
-
+ <p>
+  <a href="../../images/architecture-transform.png"><img src="../../images/architecture-transform.png"  alt="architecture-transform"></a>
+</p>
