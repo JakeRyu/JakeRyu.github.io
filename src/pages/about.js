@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Index = () => (
-   <div>
-    <h1>This is the index page</h1>
+const About = () => (
+  <div>
+    <h1>This is the about page</h1>
     <div>
       <Link to="/">Home</Link> | <Link to="/about">About me</Link>
     </div>
@@ -13,4 +13,4 @@ const Index = () => (
   </div>
 )
 
-export default Index;
+export default About
