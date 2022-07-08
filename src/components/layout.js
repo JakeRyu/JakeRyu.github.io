@@ -3,7 +3,7 @@ import * as styles from './layout.module.scss'
 import Header from './header.js'
 import Footer from './footer.js'
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
    <div className={styles.container}>
       <Header />
       <div className={styles.content}>
@@ -15,3 +15,4 @@ export default ({ children }) => (
    </div>
 )
 
+export default Layout
