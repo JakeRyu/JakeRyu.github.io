@@ -10,6 +10,9 @@ const ArticleList = () => (
           totalCount
           edges {
             node {
+              fields {
+                slug
+              }
               id
               frontmatter {
                 title
@@ -28,7 +31,7 @@ const ArticleList = () => (
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Article
             id={node.id}
-            to="/"
+            to={node.fields.slug}
             keywords={node.frontmatter.keywords}
             title={node.frontmatter.title}
             date={node.frontmatter.date}
