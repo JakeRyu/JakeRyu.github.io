@@ -3,8 +3,10 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Title from "../components/title"
 import * as styles from "./post.module.scss"
-
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 const Post = ({ data }) => {
+  deckDeckGoHighlightElement()
+
   const post = data.markdownRemark
 
   return (
