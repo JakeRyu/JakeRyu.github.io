@@ -2,6 +2,7 @@
 title: "Get the repository pattern right"
 date: "2020-03-27"
 image: "https://source.unsplash.com/150x150/?database"
+keywords: "database"
 excerpt_separator: "<!--more-->"
 categories:
   - en-GB
@@ -64,7 +65,7 @@ public class Repository<T, I> : IRepository<T, I> where T : Entity where I : str
 
 Domain repository is the one you will use in your code. Looking at the inheritance hierarchy, it implements its own interface and inherits the generic repository.
 
-![Repository Interface Hierarchy](../../images/repository-inheritance-hierarchy.png)
+![Repository Interface Hierarchy](../images/repository-pattern-en/repository-inheritance-hierarchy.png)
 
 Having its own interface `IDomainRepository` allows to extend its function further than what the generic repository offers. You can declare more functions there which should be specific to the repository.
 
@@ -99,7 +100,7 @@ public class SiteController : ControllerBase
 
 One of the common mistakes of using the repository pattern is that people implement a save method inside the repository while the repository should work as a collection. Adding an entity, modifying it and removing it are the responsibility of the collection, but it doesn't save itself. Unit of work is a container of all repositories and instantiates them in it. Thus, a repository is obtained via the unit of work, and it saves all changes across multiple repositories in a transaction.
 
-![Unit of work](../../images/unit-of-work.png)
+![Unit of work](../images/repository-pattern-en/unit-of-work.png)
 
 Unit of work hides `DbContext` as developers are not expected to directly use it. Note that the constructor expects a `DbContext`. It is important to have an instance of the context before creating an instance of the unit of work.
 
@@ -148,7 +149,7 @@ Think the number of database tables. If each table happens to be an individual r
 
 Aggregate root encapsulates a primary entity with child entities and is exposed to the unit of work. It not only reduces the number of repository also, makes functions more complete with associated entities.
 
-![Aggregate root](../../images/aggregate-root.png)
+![Aggregate root](../images/repository-pattern-en/aggregate-root.png)
 
 A diagram above shows an aggregate repository for Station that encapsulates SalesHouse. `IStationRepository` is not a dumb repository here; it defines some additional functions on behalf of SalesHouse entity.
 
