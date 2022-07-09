@@ -20,12 +20,20 @@ module.exports = {
       },
     },
 
+    // https://www.gatsbyjs.com/plugins/gatsby-remark-highlight-code/
+    // Consider lines highlighting
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
             resolve: `gatsby-remark-highlight-code`,
+            // https://docs.deckdeckgo.com/?path=/story/components-highlight-code--highlight-code&args=theme:one-light
+            options: {
+              terminal: "carbon",
+              theme: "one-light",
+              lineNumbers: true,
+            },
           },
         ],
       },
