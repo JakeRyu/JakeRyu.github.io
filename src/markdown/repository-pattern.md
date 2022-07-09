@@ -1,6 +1,6 @@
 ---
 title: "Get the repository pattern right"
-date: "2020-03-27"
+date: "2020-03-07"
 image: "https://source.unsplash.com/150x150/?database"
 keywords: "database"
 excerpt_separator: "<!--more-->"
