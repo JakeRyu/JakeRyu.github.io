@@ -12,6 +12,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    // https://www.gatsbyjs.com/plugins/gatsby-plugin-catch-links/ : md 파일 내에서 다른 파일로 링크를 제공
+    `gatsby-plugin-catch-links`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
