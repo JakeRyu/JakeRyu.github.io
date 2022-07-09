@@ -1,8 +1,8 @@
 ---
 title: "API Versioning"
 date: "2020-04-03"
-image: "https://source.unsplash.com/150x150/?webapi"
-keywords: "repository"
+image: "https://picsum.photos/150/150"
+keywords: "api"
 excerpt_separator: "<!--more-->"
 categories:
   - en-GB
