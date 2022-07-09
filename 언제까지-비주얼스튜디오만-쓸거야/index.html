@@ -1,0 +1,412 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.18.0"/><style data-href="/styles.db05a864f5362495e721.css" data-identity="gatsby-global-css">body{font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:22px;margin:0}._404-module--content--OUNuJ{background-color:#fafafa;padding:20px}._404-module--content--OUNuJ ._404-module--header--FWmI-{color:red}._404-module--content--OUNuJ ._404-module--error-message--diUlb{color:gray;font-size:20px}.layout-module--container--RoCXy{min-height:100vh;position:relative}.layout-module--container--RoCXy .layout-module--content--FwTjf{margin:0 auto;max-width:960px;padding-bottom:100px}.layout-module--container--RoCXy .layout-module--content--FwTjf a{color:#000}@media screen and (min-width:1px)and (max-width:1000px){.layout-module--container--RoCXy .layout-module--content--FwTjf{padding-left:20px;padding-right:20px}}.header-module--container--i1m8L{margin:50px auto 0;max-width:960px;min-height:140px;padding-top:30px}.header-module--container--i1m8L .header-module--row--PMRLn{padding:5px;text-align:center}.header-module--container--i1m8L .header-module--button--MRlxv,.header-module--container--i1m8L .header-module--button-github--99DPx,.header-module--container--i1m8L .header-module--button-icon--lGaW9,.header-module--container--i1m8L .header-module--button-linkedin--bCjbJ,.header-module--container--i1m8L .header-module--button-twitter--a8R0i{background-color:#222f3e;color:#fff;display:inline-block;font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:12px;font-weight:700;height:30px;line-height:30px;margin-bottom:10px;margin-right:10px;min-width:15px;padding-left:10px;padding-right:10px;text-transform:uppercase}.header-module--container--i1m8L .header-module--button--MRlxv:hover,.header-module--container--i1m8L .header-module--button-github--99DPx:hover,.header-module--container--i1m8L .header-module--button-icon--lGaW9:hover,.header-module--container--i1m8L .header-module--button-linkedin--bCjbJ:hover,.header-module--container--i1m8L .header-module--button-twitter--a8R0i:hover{background-color:#0984e3}.header-module--container--i1m8L .header-module--button-github--99DPx,.header-module--container--i1m8L .header-module--button-icon--lGaW9,.header-module--container--i1m8L .header-module--button-linkedin--bCjbJ,.header-module--container--i1m8L .header-module--button-twitter--a8R0i{background-position:50%;background-repeat:no-repeat;background-size:16px 16px}.header-module--container--i1m8L .header-module--button-github--99DPx{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiChgMFzkb2YICAAAA6klEQVQoz42RP0oDcRhE3y8gaFIJplAhWgXcQJoFwT6VkCJlDpALeAALS8scwBPEK+gBTCGCf1hwYRU3zRYWhsTqWShBiKu+8mOYYb6Bv7Fr3+rStWrfLgTwloiCY+7ZZAvImbDHCRvchRZgYRkFVICsND0DbDordZjZxJG/MQpmNIArLnhnnRryxis1DomAJ5yq5wZj40XF2NgVL9UpJuoumJouBKkpuK8mFcZI/mOHHBhjRz34tP0eAfbUDuDQa3eWXt320SEEAAcc8UJCwZzAKnVa1DkNZ18CACPabLOGzHnmJjz8Y2eAD7/5vvjSJOIHAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTEwLTI0VDEyOjIzOjU3KzAyOjAwzxYwVwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0xMC0yNFQxMjoyMzo1NyswMjowML5LiOsAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC)}.header-module--container--i1m8L .header-module--button-twitter--a8R0i{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiChgMIBW5Bk7VAAAA0ElEQVQoz4WRvWoCYRRE5xN0GxEb0Wq1CIKdYGGRQlIL+ggW8YFWSJEUtr6AjaCihVVsBUMkEEgtdsE/ciyM+q2r7Cnv3Bkuc6UQTHBERlVF1TdfEgnh0CJmyRVWAKx5Y0BKPAET0ueFby4MaYg8AD80cSVy2LSPnv558EHHt1CTRJExf9zGPSYs7shLSYpIetbnzQpGp7sdXlgH/Bvy/wlmo7mcgN8zdi4luj7/lPhFTPLIKztL9qxuKdOzpF8m1APPIquCHrTVu2ZmH/bfKw47VepU/0v6uQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0xMC0yNFQxMjozMjoyMSswMjowMIhPuIoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMTAtMjRUMTI6MzI6MjErMDI6MDD5EgA2AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==);margin-right:0}.header-module--container--i1m8L .header-module--button-linkedin--bCjbJ{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiChgMHzpKCVmwAAAAi0lEQVQoz82QIQ7CQBBF3zYISBpO0XABDAaFQdaSIFZwoJ4DRYIjnAIcqoYKLAd4iJISsjQIDE9M/mT+/EwGV9buzenDWtXYN884Azzrx4Tc6JQfsKV6KYeu3Xn3aAGDZGPMgTkAC04uU0MkdHrEJksMgSslM24AlOkNjRMAq7ZNE7bh8v6oL/yD4QFJWUru4kp6/AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0xMC0yNFQxMjozMTo1OCswMjowMPwlT0MAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMTAtMjRUMTI6MzE6NTgrMDI6MDCNePf/AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==)}.header-module--container--i1m8L .header-module--link--jOlJU{color:#222f3e;font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:17px;font-weight:700;text-decoration:none}.header-module--container--i1m8L .header-module--link--jOlJU:hover{color:#0984e3}.header-module--container--i1m8L .header-module--link--jOlJU:not(:last-child){padding-right:30px}.footer-module--container--5GliC{background-color:#222f3e;bottom:0;height:100px;position:absolute;width:100%}.footer-module--container--5GliC .footer-module--footer--Z1xkR{color:#fff;font-family:Verdana,Geneva,Tahoma,sans-serif;height:100px;line-height:100px;margin:0 auto;max-width:960px;padding:0 20px}.title-module--container--mDD1t{border-bottom:5px solid #576574;color:#576574;margin-bottom:30px;padding-bottom:10px;text-align:center;text-transform:uppercase}.title-module--container--mDD1t .title-module--title--cbUG\+{font-size:50px;line-height:60px}.title-module--container--mDD1t .title-module--subtitle--DRZhF{font-size:18px;font-weight:100}.article-module--article-box--GvYiU{border-bottom:1px dotted #777;box-shadow:inset 0 0 0 0 #fff;display:inline-block;margin-bottom:30px;transition:all .25s ease;width:100%}.article-module--article-box--GvYiU:hover{cursor:pointer}@media screen and (min-width:960px){.article-module--article-box--GvYiU:hover{box-shadow:inset 960px 0 0 0 #dfe6e9}}.article-module--article-box--GvYiU .article-module--left--MCqTJ{background-color:#fafafa;float:left;height:150px;width:150px}.article-module--article-box--GvYiU .article-module--right--ddbwg{color:#222f3e;margin-left:150px;margin-top:-20px;padding:15px}.article-module--article-box--GvYiU .article-module--right--ddbwg .article-module--date--jFkoy{font-size:12px;margin-bottom:20px;margin-top:-15px}.article-module--article-box--GvYiU .article-module--right--ddbwg h3{color:#222f3e}.post-module--container--e01vr .post-module--content--tnGN8{padding:20px}.post-module--container--e01vr .post-module--content--tnGN8 h1{color:#222f3e;line-height:50px;margin-bottom:30px}.post-module--container--e01vr .post-module--content--tnGN8 h2{color:#576574;line-height:30px;margin-bottom:30px;margin-top:30px}.post-module--container--e01vr .post-module--content--tnGN8 h3{color:#576574;line-height:25px;margin-bottom:30px;margin-top:30px}.post-module--container--e01vr .post-module--content--tnGN8 p{font-size:18px;line-height:30px;margin-bottom:10px;text-align:justify}</style></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="layout-module--container--RoCXy"><header class="header-module--container--i1m8L"><div class="header-module--row--PMRLn"><a href="/"><div class="header-module--button--MRlxv">Jake the dev</div></a><a href="https://www.github.com/jakeryu" target="_blank" rel="noopener noreferrer"><div class="header-module--button-github--99DPx"> </div></a><a href="https://www.linkedin.com/in/jakeryu" target="_blank" rel="noopener noreferrer"><div class="header-module--button-linkedin--bCjbJ"> </div></a><a href="https://twitter.com/jakeryu" target="_blank" rel="noopener noreferrer"><div class="header-module--button-twitter--a8R0i"> </div></a></div><div class="header-module--row--PMRLn"><a class="header-module--link--jOlJU" href="/">ARTICLES</a><a class="header-module--link--jOlJU" href="/about">ABOUT</a></div></header><div class="layout-module--content--FwTjf"><div class="post-module--container--e01vr"><section class="title-module--container--mDD1t"><h1 class="title-module--title--cbUG+">언제까지 비주얼스튜디오만 쓸거야?</h1><div class="title-module--subtitle--DRZhF"></div></section><div style="width:100%;height:200px;background-color:#fafafa;background-image:Url(https://source.unsplash.com/960x200/?visualstudio);background-size:cover;background-repeat:no-repeat;margin-bottom:30px"></div><div class="post-module--content--tnGN8"><p>얼마전 넷플릭스에서 쌈 마이웨이를 정주행했다. 김지원의 소주 원샷송이 아직도 여운이 남았는지 “언제까지 어깨춤을 추게할거야” 비슷한 제목을 뽑았다. 비주얼스튜디오는 논쟁의 여지없이 개발에 있어 기본적인 도구이지만 윈도우가 아닌 환경에서는 사용할 수 없다. 반면에 닷넷코어는 실행환경이자 개발환경(SDK)으로써 윈도우, 리눅스, 맥에서 동작한다. 이 글에서는 개발자의 운영체제에 영향받지 않는 크로스플랫폼 개발환경을 구축하는 것에 대해 알아보겠다.</p>
+<!--more-->
+<h2>Visual Studio Code + Extensions</h2>
+<p>맥 또는 리눅스상에서 윈도우의 비주얼스튜디오를 대체할 몇가지 개발툴이 있다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB40lEQVQoz12SO2tUQRTH9+tYKFhaaK9goYWFn0AE8wlSaGNhpyyE1UpFRCSiYiEYlUVdNLsYEzEadMOa7OO+5r5fc18/mbmbxtPcmd+cOf9z/nc6AE3TEMqKzUVKWdUKIVyXte5dXj8d0EZDWVf8jKbEQUnkSk0Xj/s8WLnFm0/b0NR0FDSTkqsbcy6+PCDMK504n885c+IC1871KNK25IvpiEtfbrP+5zOBF2m2eaPLyWPHuXzqPNksaAvKqmbiS16NQ/Ky7TCTBaurN+ndWSfLWzYS+zyfbdH/+50k8DVzfrzl+pXTnF15iBNDR42bFSVNVQIVeVlpC6KsoKHRl9Il06EGKGuqqp2kbpRYQba0RXdoRxn3+jvcH+zqblUYQULv/TaPBruUdVvswI1Ye7fFk+EeS8TEiehufOPZ6Jfed1RV2wsZ/J4yHM+I4kQfWH7Ix71Dhvtz0ixvRVyfD4qNZ2RLdmgJzb5ODKSUdOq6xrZMPFdgCRcvCPV4wnEIhI2wDAK/9csTgtB1cG2TNE312OquYp5t4ft+62GSJMRJShAl5FKiRDzPw7JtTMsijuP2BwjBwjAwDIMsy3SeZVk6xzBNwjBsPfw/lIhKVt+jtX4NUmpx1d3RmdorAdVdURT8A297mt8u5rkXAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="dev-tools"
+        title="dev-tools"
+        src="/static/2daaf0fac19030737ca713b362518cea/5a190/dev-tools.png"
+        srcset="/static/2daaf0fac19030737ca713b362518cea/772e8/dev-tools.png 200w,
+/static/2daaf0fac19030737ca713b362518cea/e17e5/dev-tools.png 400w,
+/static/2daaf0fac19030737ca713b362518cea/5a190/dev-tools.png 800w,
+/static/2daaf0fac19030737ca713b362518cea/c1b63/dev-tools.png 1200w,
+/static/2daaf0fac19030737ca713b362518cea/29007/dev-tools.png 1600w,
+/static/2daaf0fac19030737ca713b362518cea/09262/dev-tools.png 1896w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>JetBrains의 Rider는 비주얼스튜디오보다 여러 면에서 앞서가는 IDE다. 개인적으로 리팩토링, 테스트 커버리지 측정 기능때문에 사용하는데 이것 말고도 성능 프로파일 기능등 고급 기능들이 많이 있다. 상용제품이라서 일년 단위로 사용료를 지불하는데 20만원 가량된다. 개인 라이센스라고 해도 회사 개발업무에 사용할 수 있는데 회사에서 라이센스 비용을 지원받지 않는다는 조건이 있다. 회사에서 팀 단위로 구입하는 다른 라이센스 모델이 있기 때문이다.</p>
+<p>맥을 사용한다면 <code>Visual Studore for Mac</code>을 고려할 것이다. 아쉽게도 <code>Visual Studore for Mac</code>은 자마린 스튜디오가 그 이름만 바꾸고 아주 기본적인 개발 기능만 추가한 것이라, 윈도우의 비주얼스튜디오 기능에 훨씬 못미치는 제품이다.</p>
+<p><a href="http://www.omnisharp.net/">OmniSharp</a>는 ATOM, Subline Text 같은 텍스트 편집기에 익숙한 개발자에게 좋은 옵션으로 보인다. VS Code를 사용하는 경우에도 <code>C# for Visual Studio Code</code> 라는 이름으로 익스텐션을 제공한다.</p>
+<p>윈도우가 아닌 다른 운영체제에서의 현실적인 대안은 <code>Visual Studio Code</code> 이다. 무료이고 익스텐션 생태계가 풍부해서 마이크로소프트가 놀랄 정도로 시장에 잘 받아들여진 제품이다. 꾸준히 업데이트되고 익스텐션 또한 지속적으로 증가하고 있다.</p>
+<p><a href="https://code.visualstudio.com/download">VS Code Download</a>에서 다운로드하여 설치한 후, 닷넷 개발에 꼭 필요한 익스텐션을 설치해보자.</p>
+<p>| Extension | 설명 |
+| C# for Visual Studio Code (powered by OmniSharp)<br/> <code>ms-vscode.csharp</code> | C# 편집시 문법 하이라이트, 인텔리센스, 정의 보기, 사용된 곳 찾기와 디버깅을 지원한다. |
+| C# Extensions<br/> <code>jchannon.csharpextensions</code> | C# 클래스, 인터페이스 추가 / 생성자로부터 필드 및 속성 추가 / 속성들을 정의한 후 생성자를 통한 초기화. 코딩시 가장 많이 사용하는 리팩토링을 지원한다. |
+| REST Client<br/> <code>humao.rest-client</code> | HTTP 요청을 보내고 응답을 확인할 수 있다. |
+| ILSpy .NET Decompiler | MSIL 어셈블리를 디컴파일한다. 예를 들어, int 에서 F12를 눌러 닷넷 타입 System.Int32 가 어떻게 정의되어 있는지 볼 수 있다. |</p>
+<h3>API 프로젝트 만들기</h3>
+<p>VS Code는 텍스트 에디터다. 솔루션, 프로젝트 생성 등 IDE에서 당연시했던 기능들이 없다. 대신, SDK가 제공하는  명령어를 실행해야 하는데 사실 비주얼스튜디오도 SDK가 제공하는 기능을 UI를 통해 실행하고 있다. 커맨드 명령에 익숙해져야 하고 터미널 창을 사용하는 시간이 늘어날테지만 더욱 개발자스러워지고 있다고 생각하자.</p>
+<p>새로운 닷넷코어 API 프로젝트를 만들 것이다. VS Code를 실행하고 열기 메뉴에서 적당한 폴더로 이동한 후, 새로운 폴더를 원하는 이름으로 생성한 후 연다 (폴더명이 프로젝트 이름으로 사용된다). <code>보기</code> 메뉴에서 <code>터미널</code>을 선택하여 (자주 사용하기 때문에 메뉴 옆에 있는 단축키를 기억) 터미널 창으로 들어가자. 아래 명령을 통해 새로 만들 수 있는 프로젝트 템플릿을 살펴보자.</p>
+<deckgo-highlight-code  terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">dotnet new --help</code>
+        </deckgo-highlight-code>
+<p>모든 형태의 프로젝트가 열거된 것을 확인할 수 있다. 빈 솔루션을 만들고 프로젝트를 추가할 수도 있다.
+여기서는 <code>dotnet new webapi</code> 명령으로 API 프로젝트를 만들고 단일 프로젝트만 사용한다. 명령을 실행하면 현재 폴더명을 사용해서 프로젝트 파일이 만들어진다. 아래에 이어지는 명령으로 빌드와 실행까지 해보자.</p>
+<deckgo-highlight-code  terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">dotnet new webapi
+dotnet build
+dotnet run</code>
+        </deckgo-highlight-code>
+<p>브라우저를 열고 <code>https://localhost:5001/weatherforecast</code> 처럼 주소를 입력하면 API가 리턴하는 결과를 확인할 수 있다.</p>
+<p>다시 VS Code 터미널창에서 <code>Ctrl + C</code> 를 눌러 웹서비스를 중단한다. 비주얼스튜디오 처럼 <code>F5</code> 키로 디버깅을 시작할 수 있고 <code>Ctrl + F5</code> 키로 디버깅없이 시작할 수도 있다.</p>
+<h2>개발용 로컬 데이터베이스</h2>
+<p>현재 API는 <code>Weatherforcast</code> 컨트롤러는 샘플로 갖고 있는데 정적으로 선언된 데이터를 사용하고 있다. 이 데이터를 로컬 데이터베이스에서 가져다 보여주도록 바꿔보자. 가장 먼저 필요한건 데이터베이스 설치다.</p>
+<p><code>SQL Server Express LocalDB</code> 같은 럭셔리 옵션은 윈도우에서만 가능하다. 이런 제약사항에 얽매이기보다 도커를 사용해서 원하는 데이터베이스를 운영하는 것도 개발자의 큰 즐거움이다. 여기서는 오픈소스 데이터베이스인 PostgreSQL을 사용한다.</p>
+<p>자신의 운영체제에 맞는 <a href="https://www.docker.com/products/docker-desktop">도커 데스크탑</a>을 설치한다. 그리고, <a href="https://hub.docker.com/">도커 허브</a>에서 database 키워드로 검색해 보자. 대부분의 데이터베이스가 이미지로 존재한다는 것을 확인할 수 있다. 누겟 패키지를 다운로드해서 사용하는 것 만큼이나 도커 이미지를 다운로드해서 사용하는 것도 쉽다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 91.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC7ElEQVQ4y3VTS28URxCev5H3ORduOQWJkGt+JZBIBBkpHCLENZKVGAvZB0cWxnbYXe/u7M72dM/0+zH9oeoZFmQ5JX3qx1TVfPV1VXX/D4Hvn7b4+gnDjwccv7wQePic48FBi58OOH5+zvHD7+P3735l+GZav532Xz5m+OLRDl89Zrj3rEV1tOhxsrE4upE4XiqcNAF/rQKOtgmvlwqHM4EzFnHWprvBJkznCilghC/IMUC7AOcDcvBA9MAQJ4S7kT6h2jYMUmko46CMhdIWjHeotww7JrDeNFjV27KKTsIYC61N8eulQcMEeKdgfYIyHtWuFSVgs22Ko7UOMUbElMq5lwpKaUhatYGmQBfhQ8SQASUF3l+eYnZ1inp5jUr0CqKX6LoeRhs45xGthRcCouuxYy1Yy8G5gHEONgEm5pJstIxhSMh5KEQqcm6ngK6XheEwDMg5QxtiKKG0LrJIpZBSLMHF52PKaZNSQsVFj3/P3+Li8row+ZiQzDoP4zy0dTDWFvZ0Jr3pG/0075kCw5BREaub5RrregsuuknDVJKGEOB9gKc1DbAhIaSRHbGhso3usZydF2zrGSohOrRcwDtfktlbGrK2BeMCwniokBEn8fJUMOnnrCqwVo9ts7hZQSmzf+U0jCxIv5bzklgIAe/9pFne43NLaSCGPVbrDVbrurTO/2moJ/bGjv1K97etaNjsWly8u8J8sfxMw4g05NKLBNKLdA0xIsRxP/oM0KrHcv62oNksUHHeFYY0AW7S0XkPo7rSgzvG0OxYWXvr0QcULfetEgOUbKElh1YdqpZ3+G8235dLoFeN3pS+66amp0mxzpXeJBDD25bGkhmurt9juarLmBHTPGmop9nulEZP806jqDSEVEXTu6wioalsSkSiUikp02jl/WvT/bDff+pDemWpLS4XG1zMayxqhuqfo2P8+fIVDg//xunJKc7eXUIdv4H67SmYlOCc74Nvg8zHhHnd4Px6jtWW4QNtCVY8ecMfRwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="docker-hub-databases"
+        title="docker-hub-databases"
+        src="/static/630ff41482e470df002beb2697c8fb2a/5a190/docker-hub-databases.png"
+        srcset="/static/630ff41482e470df002beb2697c8fb2a/772e8/docker-hub-databases.png 200w,
+/static/630ff41482e470df002beb2697c8fb2a/e17e5/docker-hub-databases.png 400w,
+/static/630ff41482e470df002beb2697c8fb2a/5a190/docker-hub-databases.png 800w,
+/static/630ff41482e470df002beb2697c8fb2a/c1b63/docker-hub-databases.png 1200w,
+/static/630ff41482e470df002beb2697c8fb2a/29007/docker-hub-databases.png 1600w,
+/static/630ff41482e470df002beb2697c8fb2a/d8d63/docker-hub-databases.png 2026w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>검색 결과에서 <a href="https://hub.docker.com/_/postgres">Postgres</a>를 선택하면 제품에 대한 개략적인 내용과 사용하는 방법을 확인할 수 있다. 도커 데스크탑을 설치했다면 아래 한줄 명령으로 Postgres 데이터베이스를 실행할 수 있다.</p>
+<deckgo-highlight-code  terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker run --name postgres-docker -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres</code>
+        </deckgo-highlight-code>
+<p>위 명령을 통해,</p>
+<ul>
+<li>도커 허브에서 <code>postgres</code> 이미지를 다운로드한다 (로컬에 캐시된 이미지가 있으면 재사용).</li>
+<li>도커 컨테이너의 이름(<code>--name</code>)을 <code>postgres-docker</code>라고 지정한다.</li>
+<li>컨네이너 외부와 내부의 포트(<code>-p</code>)를 5432로 매핑한다.</li>
+<li>환경변수(<code>-e</code>)로서 데이터베이스 접속에 필요한 비밀번호를 지정한다.</li>
+<li>도커 컨테이너를 백그라운드(<code>-d</code>)에서 실행하고 컨테이너 ID를 출력한다.</li>
+</ul>
+<p><code>docker run</code> 명령은 이미지를 지정해서 컨테이너를 생성하고 실행까지 하는 함축적인 명령이다. 위 명령어는 두번 실행할 수 없다. 한번 더 실행하면 다음과 같은 에러를 만나게 될 것이다.</p>
+<blockquote>
+<p>You have to remove (or rename) that container to be able to reuse that name.</p>
+</blockquote>
+<p>컨테이너가 생성되어 이미 존재하는데 같은 이름으로 다시 만들려고 하기 때문에 생기는 문제다. 컨테이너가 생성된 이후에는 <code>docker container &#x3C;command></code> 명령어로 제어한다.</p>
+<p>아래는 기본적으로 자주 쓰게될 명령어들이다.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker ps   # 컨테이너 리스트 보기
+docker ps -a   # 비활성화된 컨테이너까지 모두(all) 보기
+docker container stop &lt;container id or name&gt;   # 컨테이너 실행중지
+docker container start &lt;container id or name&gt;   # 컨테이너 실행
+docker container rm &lt;container id or name&gt;   # 컨테이너 삭제</code>
+        </deckgo-highlight-code>
+<p>Postgres 데이터베이스가 실행되었다고 했지만 그 실체는 아직 보지 못했다. 아래 명령문을 통해 <code>postgres-docker</code> 컨테이너에 접속해서 터미널과 같은 <code>bash</code> 애플리케이션을 실행할 수 있다.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker exec -it postgres-docker bash</code>
+        </deckgo-highlight-code>
+<p>Bash 모드에서 <code>psql -U postres</code> 를 타입하면 사용자 postgres로 데이터베이스에 접속할 수 있다.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">root@5d320df909e3:/# psql -U postgres
+psql (12.2 (Debian 12.2-2.pgdg100+1))
+Type &quot;help&quot; for help.
+
+postgres=# </code>
+        </deckgo-highlight-code>
+<p>명령줄이 <code>postgres=# </code> 로 바뀌면서 데이터베이스에 접속했다. CREATE TABLE 같은 문장을 직접 실행할 수 있지만 접속 테스트는 여기까지 하고 <code>\q</code>를 입력하여 빠져나온다. <code>exit</code> 타입하여 bash 터미널도 빠져 나온다.</p>
+<p>테이블을 관리하거나 데이터를 보기에 터미널은 불편하다. 대부분의 데이터베이스에 접속할 수 있는 <a href="https://dbeaver.io/download/">DBeaver</a>를 설치해 보자. 다음에 열거한 접속정보를 사용하여 Postgres에 연결할 수 있다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 300px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 89.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAACoElEQVQ4y52TWXObSBSF+SepPCSWYhaJVcISqxAIIbSgXTZe85LKk2f+/zfVxPK4JpmqOA9fHbpvczjdl5biKCWKMoQO+h6OG9Dve7i94QsefaFiTuD62I6H0/PpiVrfx3WDV6Ti9ES+qJiuT4yPDxyLKeVqz3h7T76vyXbXTHc1k80N2epAUm64uTlyOm2p9idmyzWTckE2mzOZLZCSbc24KJiUK0bLNatpxrRckSx3hHlOur9m8/idbf3E+vqeotpz/3DL/nCg2h5YVBsW1Zbd6Yb1/oikxBUDPyRNRgSex2DokSQj4jDg08cPWOGUov7OZrlgt9sTRyP6rsdwGDAc+nheQBBELJcVZblAUuRLLi4uaLVaP9Nu025d0HpT/9Ju87kfMfF1dmODT6rNF1XhUpbRDQPJtCxMw8AwDEzTRNf1RsXYsqwGMaeqKpqmNap2OnS7GnpXjLXXmmXbSJ7vU1QHxuMxV1dXhGFImqb4vt8YCTqdzi/RXrTb7f4wtGykQRBhz06NSZIkxHFMlmXNs+d5RFHUqPiAqLmuiyzLP5K+QZFlDNNE8qMRp01NmaVMi4LA98nznPl83qTt9Xo4jtNs/azn5G8RKW3HQUrTjPrbN3b1Pbe3d9zd3bFaraiqirqu2Ww2rwnP+n8EYYjU1VT0QUi0OnKoSuaLJclo9O85adpvoSoKpmkhGbpO61Ll69zl72OIH6eEQdB0WVGUn87qVwhDsdYQhmL/baXDw2LI88EnTnOGg6vmrM6L35WwMZQ1npY+f50SwlHKNM+bLr/X8CVhl7bS5XHW43nn4kXj5ur992d+n6Gq81iYPK8NorQgGcVNR9+avsNQR1FVHLND3+ogrqJoiG3bTZf/yFC8JCsql4radOvMn2z5HyneXehHLzgpAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="postgres-docker"
+        title="postgres-docker"
+        src="/static/f38080ccfea2fd6a450ff34e5ea9815b/5a46d/dbeaber-postgres.png"
+        srcset="/static/f38080ccfea2fd6a450ff34e5ea9815b/772e8/dbeaber-postgres.png 200w,
+/static/f38080ccfea2fd6a450ff34e5ea9815b/5a46d/dbeaber-postgres.png 300w"
+        sizes="(max-width: 300px) 100vw, 300px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>설치 후, 다음 정보를 이용해서 데이터베이스에 연결한다.</p>
+<ul>
+<li>Host : localhost</li>
+<li>Port : 5432</li>
+<li>Username : postgres</li>
+<li>Password : postgres (docker run 명령에서 지정한 비밀번호)</li>
+</ul>
+<p>그림과 같이 접속에 성공했다. 기본 데이터베이스로 postgres 라는 데이터베이스가 보인다. 이왕이면 프로젝트에 맞게 데이터베이스를 생성하고 테스트용 데이터까지 포함된 이미지라면 더욱 좋을 것이다.</p>
+<h2>도커 이미지 만들기</h2>
+<p>이전 연습을 통해 <code>postgres</code>라는 기존의 도커 이미지를 사용하여 컨테이너를 올리고 데이터베이스를 운영하는 것이 명령어 한줄로 된다는 사실을 알았다. 그 단순한 과정을 강조하기 위해 실무에 필요한 요소들을 다루지 않았다. 이제 좀더 쓸모있는 데이터베이스가 되기 위해 몇가지를 추가하여 이미지를 만들 것이다.</p>
+<p>VS Code에서 <code>열기</code> 메뉴를 통해 새로운 폴더를 만들어 연다.
+<code>init.sql</code> 이름의 파일을 추가하고 다음의 내용으로 저장한다.</p>
+<deckgo-highlight-code language="sql" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">create table status (description varchar(255));
+
+insert into status values(&#39;Freezing&#39;);
+insert into status values(&#39;Bracing&#39;);
+insert into status values(&#39;Chilly&#39;);
+insert into status values(&#39;Cool&#39;);
+insert into status values(&#39;Mild&#39;);
+insert into status values(&#39;Warm&#39;);
+insert into status values(&#39;Balmy&#39;);
+insert into status values(&#39;Hot&#39;);
+insert into status values(&#39;Sweltering&#39;);
+insert into status values(&#39;Scorching&#39;);</code>
+        </deckgo-highlight-code>
+<p>데이터베이스에 새 테이블을 만들고 데이터를 입력하는 seeding 작업이다.</p>
+<p>위 파일과 같은 위치에 <code>Dockerfile</code>라는 이름으로 확장자 없이 파일을 추가한 후, 아래와 같이 저장한다.</p>
+<deckgo-highlight-code  terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">FROM postgres 
+ENV POSTGRES_PASSWORD mysecretpassword 
+ENV POSTGRES_DB weather
+COPY init.sql /docker-entrypoint-initdb.d/</code>
+        </deckgo-highlight-code>
+<p><code>Dockerfile</code> 은 도커 이미지를 만들기 위한 설명서라고 할 수 있으며 다음과 같이 해석된다.</p>
+<ul>
+<li><code>postgres</code> 이미지를 사용하는데</li>
+<li><code>mysecretpassword</code>를 비밀번호로 지정하고</li>
+<li><code>weather</code> 라는 데이터베이스를 생성한다.</li>
+<li>그리고,  <code>init.sql</code> 파일을 도커 이미지 내의 <code>/docker-entrypoint-initdb.d/</code> 폴더로 복사한다. 이곳에 위치한 파일은 컨테이너 시작시 자동으로 실행된다.</li>
+</ul>
+<p>단 네 줄로 도커 이미지에 필요한 내용을 설명하고 있다. VS Code의 터미널 창에서 다음 명령으로 도커 이미지를 생성한다.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker build -t postgres-weather .</code>
+        </deckgo-highlight-code>
+<p>아래 스냅샷에서는 이미지가 스텝별로 생성되는 과정을 보여준다. 또한, <code>docker images -a</code> 명령으로 이미지가 생성되었는지 재확인하고 있다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 37.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABHElEQVQoz32S6YqDQBCE5z2i8YwaD9Sg8SRq4oE/BN//ZXqphhE3LPuj0B7p6m+qFV3XUdu29Hq9qCxLquuamqbh96qqqCgKut/vFEURpWnKQq2qKl2vV9I0jZ+yFjCYpomWZaE8z7kxCAJu8n3/aL5cLocURTlMpGQtQAgz0Ni2fRhZlkW3240cxzkozpIm37WAEUxx5ff7zdcHJQyhM9FfRt8SwzDQtm30+XwojmN6Pp/8RIZZljGx67r/0v0yxAJgBrLH48FLQIagQwSmabJACZ3zAv25xncBM5DAGIKx3DRoQSgpPc8jXde5EUNwjnxRG4bBmfOWkyThA5kVJiNbDJLT8Qfs+07jOPIZbjHPM/V9T2EY8rB1XekHF7Xtvr9/U/4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="docker-image-created"
+        title="docker-image-created"
+        src="/static/98c57b91f476fb76e1d870cf83b7c931/5a190/docker-image-created.png"
+        srcset="/static/98c57b91f476fb76e1d870cf83b7c931/772e8/docker-image-created.png 200w,
+/static/98c57b91f476fb76e1d870cf83b7c931/e17e5/docker-image-created.png 400w,
+/static/98c57b91f476fb76e1d870cf83b7c931/5a190/docker-image-created.png 800w,
+/static/98c57b91f476fb76e1d870cf83b7c931/c1b63/docker-image-created.png 1200w,
+/static/98c57b91f476fb76e1d870cf83b7c931/bd9eb/docker-image-created.png 1442w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<h2>도커 컨테이너 만들기</h2>
+<p>로컬 머신에 이미지가 존재하기 때문에 이를 이용해서 컨테이너를 만드는건 아주 쉬운 일이다.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker run --name postgres-docker -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+# 수정하면,
+docker run --name postgres-weather -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres-weather</code>
+        </deckgo-highlight-code>
+<p>최초로 사용했던 위 명령어를 응용하면 될 것이다. 컨테이너 이름(<code>postgres-docker</code>)이 겹치지 않게 새롭게 지정하고, 소스 이미지 이름 <code>postgres</code>을 <code>postgres-weather</code>로 바꾸면 될 것이다.</p>
+<p>여기서는 한걸은 더 나아가 앞서 작성한 이미지를 도커 허브에 게시하고 팀원들이 사용할 수 있는 방법을 설명할 것이다.</p>
+<h2>도커 허브에 이미지 게시</h2>
+<p><a href="../images/visualstudio/jakecompany-dockerhub.png"><span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 62.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABpUlEQVQ4y6WSPW8TQRCGr+UrkaipkWiRAOV/8VeosKFARKYGQxI+JBo6CiQkGgjYDgX4ciSxfbczO7sP2vWZOJYMSFnp0ZxmRnPvvrPFtUcVl7slNx5XbD2puJPoVdzuVdzqVdzcrtjolFzslGx2SzYflGx0S64+nMcr3ZJLnZIL98dc364o+vtTnu7X9L9M2ftW8+yrY2/oeHMgvB4Jr0ZCfyA8Hwg7w1N2h8KLRFtLvBwJBQQgtpz/FG+/K59+GeaVH9UR4+qYWSOECBZixrfYv4iRYncgfCg9BM9kVmecKKoe9R7vLcdECCGriDGupfjfq6TmtbVcb69cuYAmFUmRemZ1g5nROIeFQOPkr4oSoSUrPJwKtRNEBCdC0zicm8eUS4NFdC0qSvBK9IpXpUhqskcLz8z+XG81ckbZPOUscu9jzd13E97/TAO9R1Sz4QvS8DR4cVIu9Vi7lHRSPfdHOJgYn4+NE40U45nn8OiE0A5If09KbUmpqmZvQ4htLtKo4S2cvt9o+btobD5g2eTlzWbTW+VnciuLMQuLZxNXvDkfvwGxBd/vzrFuEQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="jakecompany-dockerhub" title="jakecompany-dockerhub" src="/static/ad183864a976af66dd377a381ce8256d/5a190/jakecompany-dockerhub.png" srcset="/static/ad183864a976af66dd377a381ce8256d/772e8/jakecompany-dockerhub.png 200w,
+/static/ad183864a976af66dd377a381ce8256d/e17e5/jakecompany-dockerhub.png 400w,
+/static/ad183864a976af66dd377a381ce8256d/5a190/jakecompany-dockerhub.png 800w,
+/static/ad183864a976af66dd377a381ce8256d/c1b63/jakecompany-dockerhub.png 1200w,
+/static/ad183864a976af66dd377a381ce8256d/29007/jakecompany-dockerhub.png 1600w,
+/static/ad183864a976af66dd377a381ce8256d/b5c8e/jakecompany-dockerhub.png 2194w" sizes="(max-width: 800px) 100vw, 800px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy" decoding="async">
+    </span></a></p>
+<p>누겟 패키지를 다운로드하는 패키지 리포지토리가 있는 것처럼 도커 이미지를 등록하고 다운로드 할 수 있는 장소가 도커 허브다.</p>
+<p><a href="https://hub.docker.com/">도커 허브</a>에 계정을 만들면 공개 리포지토리를 생성할 수 있다 (비공개 리포지토리는 유료다). 개인 계정에 이미지를 게시하는 것도 괜찮지만 팀에 공유할 것이니 Organization을 추가하자. Organization 이름은 고유해야하고 개인 계정에 추가하는데 제약이 없다. 당신이 회사를 대표해서 도커 허브에 orginization을 등록하는 첫번째 기회를 놓치지 말자.</p>
+<p>여기서는 <code>jakecompany</code>라는 organization을 추가했고 이 것은 별도의 <code>네임스페이스</code>로 인식된다. 도커 허브를 사용하는 <a href="https://docs.docker.com/docker-hub/">퀵가이드</a>에 내용이 잘 정리돼있다.</p>
+<p>이제 조직을 위한 공간(네임스페이스)이 준비되었으니 그 하위에 이미지를 배포할 리포지토리를 생성한다. 도커 허브의 첫 화면으로 돌아가서 네임스페이스를 방금 생성한 조직으로 변경한 후 <code>Create Repository</code> 버튼을 클릭한다.</p>
+<p><img src="../images/visualstudio/dockerhub-namespace.png" alt="dockerhub-namespace"></p>
+<p><code>postgres-weather</code>라는 이름의 리포지토리를 생성한다. 이 과정은 생략할 수도 있는데 이미지를 게시할 때, 이미지 이름에 해당하는 리포지토리를 자동으로 생성해 주기 때문이다. 따라서, 이미지 이름을 <code>jakecompany/pstgres-weather</code>로 하면 그만이다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 40%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAuElEQVQoz51Q2QrDMAzr/39nU9aHsjbOfWnYLCMUWkYNIpEPRfEUU4ImAzIWKSVQqNC+AK2hPcBUSkEpFTln1NpQvmhPBd/7DrUseK0rZqUwqwXbtoHj3PxPTCPhoVqr4Cq68KXDECKICJoI3oefaM5FuNYaxhjp4fXcif12yIPee9nj6IS5c05qLMp8/MUZItibrbVysqPjOESIOYPv40O3DmOMItadeOfhrEMIQXJc47w4uEF3+AFSfHY+DeuObQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="postgres-weather-jakecompany"
+        title="postgres-weather-jakecompany"
+        src="/static/1cf5fe9f6ed7465cbc090e97391cd25d/0b533/postgres-weather-jakecompany.png"
+        srcset="/static/1cf5fe9f6ed7465cbc090e97391cd25d/772e8/postgres-weather-jakecompany.png 200w,
+/static/1cf5fe9f6ed7465cbc090e97391cd25d/e17e5/postgres-weather-jakecompany.png 400w,
+/static/1cf5fe9f6ed7465cbc090e97391cd25d/0b533/postgres-weather-jakecompany.png 500w"
+        sizes="(max-width: 500px) 100vw, 500px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<p>이미지를 업로드할 리포지토리가 준비되었으니 VS Code 터미널로 돌아가 아래 명령을 실행하자.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker tag postgres-weather jakecompany/postgres-weather:v1
+docker push jakecompany/postgres-weather:v1</code>
+        </deckgo-highlight-code>
+<p><a href="../images/visualstudio/postgres-weather-repository.png"><span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 37.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABQ0lEQVQoz5WOS0vDQBSFsxcURVwqXagg7kTcu/HxG9WKVq2bCu6Etv9DdNGirbZN0kde82jyyUxarYKIA1/OueeeIeNs3PgsFl2Wii5zJy6rFx57tz475d/ZLfsULj0WzlzmT10Wz3LM7OzfD9gq+2ze+CwXXTZLHsd3fQ4rfQ4qfY4mforJzH772qdw5bFy7lpdv/ZZK3k4D42YWtMQUW+E1BohVUtks2oz11nsbtKrN82dyHqjjgoGyKBPloRACoxhLEEJ0FPkd2/2tptCpr+6SuAMg5DBKCCIYpROUeMUqTRCahKhCOOEKBFWrY+FnYXpKE0iTUfkeSxwtNYopTGaCBPGxElCGEZIKcmyjDRNreY+n2eZ7gzOe6fL23uHbq/Ha6vN49MzJntptRmORvz3OEopPrGvVfZP5pjv+Mdr/uIDuJk9TLD3hY0AAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="jakecompany-repository" title="jakecompany-repository" src="/static/0a1d629b701a75e8a0e2f2c4df704098/5a190/postgres-weather-repository.png" srcset="/static/0a1d629b701a75e8a0e2f2c4df704098/772e8/postgres-weather-repository.png 200w,
+/static/0a1d629b701a75e8a0e2f2c4df704098/e17e5/postgres-weather-repository.png 400w,
+/static/0a1d629b701a75e8a0e2f2c4df704098/5a190/postgres-weather-repository.png 800w,
+/static/0a1d629b701a75e8a0e2f2c4df704098/c1b63/postgres-weather-repository.png 1200w,
+/static/0a1d629b701a75e8a0e2f2c4df704098/8affb/postgres-weather-repository.png 1254w" sizes="(max-width: 800px) 100vw, 800px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy" decoding="async">
+    </span></a></p>
+<p>기존 이미지의 이름을 도커 허브의 네임스페이스(조직명)에 맞추고 버전으로 태깅했다.</p>
+<p>그리고, <code>docker push</code> 명령으로 이미지를 게시한다. 도커 허브의 화면을 새로고침하면 업로드된 이미지를 볼 수 있다.</p>
+<p>이미지를 찾을 수 없다면 네임스페이스를 올바르게 선택했는지 확인하자.</p>
+<h2>도커 컨테이너 운영</h2>
+<p>이제 팀원들에게 알릴 준비가 됐다. 먼저 도커 데스크탑을 설치하라고 안내한 후, 다음 명령어를 사용하게 한다.</p>
+<deckgo-highlight-code  terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">docker run -d --name weather-dev -p 5555:5432 -v weather-dev-volume:/var/lib/postgresql/data jakecompany/postgres-weather:v1</code>
+        </deckgo-highlight-code>
+<p>위 명령을 통해,</p>
+<ul>
+<li>도커 허브에서 <code>jakecompany/postgres-weather:v1</code> 이미지를 다운로드한다.</li>
+<li>도커 컨테이너의 이름을 <code>weather-dev</code> 라고 지정하고,</li>
+<li>외부 포트를 5555로 설정했다. 데이터베이스 연결시 외부 포트를 사용해야 한다.</li>
+<li>마지막으로, 볼륨 파라미터(<code>-v</code>)를 사용해서 데이터베이스의 변경 내용을 잃지 않게 설정한다.</li>
+</ul>
+<blockquote>
+<p>볼륨은 컨테이너와 별개로 호스트 머신에 설정하는 공간이다. 컨테이너는 무상태(stateless)로 유지하기 때문에 변경된 내용을 저장하려면 컨테이너 외부공간 즉, 볼륨을 사용한다. 컨테이너를 실수로 삭제하더라도 원본 이미지와 볼륨으로 이전 컨테이너를 복구할 수 있다.</p>
+</blockquote>
+<p>도커 데스크탑 설치와 한줄 명령으로 팀원들은 새로운 데이터베이스를 사용할 수 있게 되었다. DBeaver로 연결해서 status 테이블에 seeding 데이터가 잘 입력되었는지 확인하자.</p>
+<p><a href="../images/visualstudio/dbeaver-status-data.png"><span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 67.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACoklEQVQ4y2WTy47jVBBA/TGDuhPHj/gVO078iB07fsSO42TS07QGaAlpZtggYDtC4gOQWMGILUL85UG+6aSnYVEqqXzv0am6Zen1Y03Z7qi2PWV3omwPFE1PWQ+1jrrpqJo9ebUjTTLyvGSdFVTtgbrtxZmuf839w9fsD3dIm21P1eyouyOrqiY/veXN4zuOd/dsd3vq3YFmf6Q/fUm0zkk2FbbjsNpUot505/vFtiWvtkgzx8a2bVx3hiKP0WyPIIxxXQ/bW1DEHqbjslgsmMc5Zf9A3+4I04IkK4jTjeim2+3J8wLJMC2M6RTDMJhODXRNZTQaMR6PUXUdy9BQNA1ZHuPMA9xyix/PiJOMKM2E1dBJ2/VkmxKpqFrSZEVd10RRhO/7wmbIuqahqNo5K4qor/IN33z3I3/8+Q+fPv3Fb7//zemrd9iLCH+VIzXdkSzPWacpWZbhui7TJ2NN09BUVWRVmWB5Ph9++pmPv/zK+x8+8vbb79k/vCdINkwUBW1qIK2rgkNbslgG4qKu66iqeg0BHYCqimU71PsTWVnjeS43Nzd88erVeTyqIrqQfMdgGcWE8YpguWQ+n+M4zgvYBWiaFpthVdo9c8/j9vZWwCaTyVVAUnWDIKvZNfV5brp+tfwceLEf1qZsOmzLEsAhZFkW54WhPFEoEp/D6cRiGTKRZfHhYqWqz8DpAMwLYTh0M9gNG/HCcDzROGQz7ndrgigRs5nNZv+b4cVwXdQCGIWhGM9geAEKw7Gic0w07goPP4ixLBPTNK+GzzPUxOuHSca63GKZhvghBsgQz4aKTh8rnAqPcLXGMs2nV1NfQIc8rNI8XOFHCePRCOUJ8gI4UnTepCqPXcimaoiicyuDzX/XZqgFqzVRmiOPR1fY5/EvVGfeYM1kkfYAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="dbeaber" title="dbeaber" src="/static/b15e73896ebdf876821515f884c170c3/5a190/dbeaver-status-data.png" srcset="/static/b15e73896ebdf876821515f884c170c3/772e8/dbeaver-status-data.png 200w,
+/static/b15e73896ebdf876821515f884c170c3/e17e5/dbeaver-status-data.png 400w,
+/static/b15e73896ebdf876821515f884c170c3/5a190/dbeaver-status-data.png 800w,
+/static/b15e73896ebdf876821515f884c170c3/c1b63/dbeaver-status-data.png 1200w,
+/static/b15e73896ebdf876821515f884c170c3/6569d/dbeaver-status-data.png 1328w" sizes="(max-width: 800px) 100vw, 800px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy" decoding="async">
+    </span></a></p>
+<p>호스트 머신을 재시작하면 컨테이너는 자동으로 실행되지 않는다. 컨테이너는 이미 생성되었으므로 찾아서 실행시켜 줄 필요가 있다.</p>
+<p><code>docker container start weather-dev</code> 명령을 사용할 수 있지만 도커 데스크탑을 사용하면 편리하다. 태스크 바에 있는 도커 아이콘을 클릭해서 Dashboard 메뉴를 선택하면 아래와 같은 화면을 볼 수 있다. 컨테이너 정지, 시작, 삭제 및 CLI 모드로 접속할 수 있다.</p>
+<p><a href="../images/visualstudio/docker-dashboard.png"><span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 63%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABrklEQVQ4y6WTW2/aMBTHD29Ttw+wvRBICrk45ObEMUloQoCWmiHtIu2r7nWfotu0dtJYH/YdBj6VUyhtpV3YLP10bJ9z/rKPj+HdcliGE760wlw4cSbse5gRF/HJVPB6LkiSC5ve7lt0KAgrBJ8Ikdbnonr5dpmM5zmo4VB2bVKOhs/wOEjv6IUp6l6CcTnDbLZAMxre7m/9as2qU2TjM6wWr9HPqs8A8AT6NF8Nihr9vF476Ym02Ug6bNRYKylkn2ayF2XSiotmvcNMSnmcjBXrfjrFHh19BIBnQHi58mdnyCeLdVSeyqCYSr+YSi+fyEFWS0+R1818z1i6xVw65SvF2qneoJWdK8GnoDnBygw5Ejba9EKOhpdgdxCjRqLf0iEhdkig2Cir2d6nrWC40lyqgjYPElz6t2w6boxtJ9gL7h37wJ2o9idI1OS17UeCO8eh/FLw8QkPu/I9wbYdfNvW7ee2joei8rBt+xeNoO7FP5rX9VnTyLrHDiRB3WfYdenXpg+NMP5gx8PvxoBe6m509Q980d3oukuC9wBwpH7fCwAwAED/D1T+c2i1WjePGk9Ss4gkfgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="docker-dashboard" title="docker-dashboard" src="/static/dd7a8983da36573021e6e98932b0cdbf/5a190/docker-dashboard.png" srcset="/static/dd7a8983da36573021e6e98932b0cdbf/772e8/docker-dashboard.png 200w,
+/static/dd7a8983da36573021e6e98932b0cdbf/e17e5/docker-dashboard.png 400w,
+/static/dd7a8983da36573021e6e98932b0cdbf/5a190/docker-dashboard.png 800w,
+/static/dd7a8983da36573021e6e98932b0cdbf/c1b63/docker-dashboard.png 1200w,
+/static/dd7a8983da36573021e6e98932b0cdbf/29007/docker-dashboard.png 1600w,
+/static/dd7a8983da36573021e6e98932b0cdbf/cb93d/docker-dashboard.png 2304w" sizes="(max-width: 800px) 100vw, 800px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy" decoding="async">
+    </span></a></p>
+<h2>API 수정</h2>
+<p>이제 데이터베이스가 준비되었으니 API의 <code>Weather</code> 컨트롤러를 수정해서 데이터베이스에 있는 내용을 출력하도록 해보자.</p>
+<p>VS Code의 파일 편집 기능과 터미널 기능으로 도커관련 작업이 끝났다. 이제, API 프로젝트 폴더로 이동해야 한다. 만약, 두 개 이상의 폴더를 동시에 열고 싶다면 VS Code의 워크스페이스를 활용하자.</p>
+<p><code>File</code> 메뉴에서 <code>Save Workspace As...</code>를 선택하여 원하는 이름으로 저장한다. 다시, <code>File</code> 메뉴를 선택하고 <code>Add Folder to Workspace...</code>를 선택하여 API 프로젝트 폴더를 추가한다. 이제 두 개의 폴더를 동시에 볼 수 있게 되었다. 터미널에서 명령을 수행할 때 작업 폴더를 항상 확인하는 습관이 도움이 될것이다. 아예 새로운 터미널 창을 추가해서 폴더별로 터미널 창을 운영하는 것도 좋은 방법이다.</p>
+<h3>Entity Framework Core 설정</h3>
+<p>데이터베이스에 접근하기 위해 EF Core를 사용할 것이다. 대부분의 데이터베이스를 지원하는데 그에 맞는 프로바이더를 설치해야 한다. API 프로젝트에 해당하는 터미널에서 다음 명령으로 PostgreSQL 데이터베이스 프로바이더를 추가한다.</p>
+<deckgo-highlight-code language="shell" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL</code>
+        </deckgo-highlight-code>
+<p>API 프로젝트 루트에 <code>Model</code> 폴더를 만들고 <code>WeatherDbContext.cs</code> 파일을 추가하고 아래와 같이 입력한다.</p>
+<deckgo-highlight-code language="csharp" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">public class WeatherDbContext : DbContext
+{
+    public WeatherDbContext(DbContextOptions&lt;WeatherDbContext&gt; options) : base(options)
+    {
+    }
+
+    public DbSet&lt;Status&gt; Status { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder) 
+    {
+        // IEntityTypeConfiguration&lt;T&gt;를 구현하는 클래스를 모두 구성한다
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(WeatherDbContext).Assembly);
+    }
+}
+
+public class Status
+{
+    public string Description { get; set; }
+}
+
+public class StatusEntityConfiguration : IEntityTypeConfiguration&lt;Status&gt;
+{
+    public void Configure(EntityTypeBuilder&lt;Status&gt; builder)
+    {
+        builder.ToTable(&quot;status&quot;);  // case sensitive
+        builder.HasNoKey(); // PK 가 없기 때문
+        builder.Property(p =&gt; p.Description).HasColumnName(&quot;description&quot;);  // case sensitive
+    }
+}</code>
+        </deckgo-highlight-code>
+<p>편의상 필요한 모든 코드를 한 파일로 작성했다. 날씨 상태를 갖고 있는 <code>Status</code> 모델을 정의하고 EF Core가 인식할 수 있도록 설정한다. 도커 이미지를 생성하면서 <code>init.sql</code> 파일에서 테이블 이름과 컬럼명을 Camel Case로 한건 실수다. 데이터베이스에서 대소문자를 구별하기 때문에 모델의 naming convention과 다른 결과를 초래했다.</p>
+<h3>컨트롤러 수정</h3>
+<p>먼저 <code>Startup.cs</code> 파일에 데이터베이스 컨텍스트를 추가한다.</p>
+<deckgo-highlight-code language="csharp" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllers();
+
+    services.AddDbContext&lt;WeatherDbContext&gt;(options =&gt; 
+        options.UseNpgsql(&quot;Host=localhost;Port=5555;Database=weather;Username=postgres;Password=mysecretpassword&quot;));
+}</code>
+        </deckgo-highlight-code>
+<p>그리고, 컨트롤러는 다음과 같이 정리했다.</p>
+<deckgo-highlight-code language="csharp" terminal="carbon" theme="one-light" line-numbers="true"  >
+          <code slot="code">[ApiController]
+[Route(&quot;[controller]&quot;)]
+public class WeatherForecastController : ControllerBase
+{
+    private readonly WeatherDbContext context;
+
+    public WeatherForecastController(WeatherDbContext context)
+    {
+        this.context = context;
+    }
+
+    [HttpGet]
+    public IEnumerable&lt;WeatherForecast&gt; Get()
+    {
+        var rng = new Random();
+
+        return context.Status.Select(s =&gt; new WeatherForecast{
+            Date = DateTime.Now.AddDays(rng.Next(0, 5)),
+            TemperatureC = rng.Next(-20, 55),
+            Summary = s.Description
+        }).ToArray(); 
+    }
+}</code>
+        </deckgo-highlight-code>
+<p><code>WeatherForecast</code> API를 호출하면 다음과 같은 결과를 볼 수 있다.</p>
+<p><a href="../images/visualstudio/weatherforecast-response.png"><span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 107.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAABYlAAAWJQFJUiTwAAADLElEQVQ4y4WV6ZbbKBCF/S5p21qMJARoQcLa5W3sbifpTGZ5/9e4cyi1vCSTmR/3gABfqvgKvHB8BS/QiNQAqc+I1Aie7BCne3gsh+MncDcp7Drb/1FrT8F50MIOekwjFB0ZMV4hlD0Zh6JHIDrE6YHm7bhVEDfU+qGZDB82WHgsg7dJf5q4R5bA2Uz9+dvdPMw9RuorLFikIdMG1njlxFh7EitX4WUtSUtnEvU/vl9W8jZvZdfPpguXpfBZhkBsscl6eNwglhnqbgttDPKyhDYlimqL3BhkRYm6r7FtK5qvugpBnN9MFzadlSPg8hLq9W/w4TNEvUd7fYMZBlTVAFMNSIsCiS5JZbWlDayhFYvye8rWcO1KuFEBcfydxHfvCIZ3uKKBjHbwmcGnlcDSUZT2p9Vz2veUEyzocD0FNywgf/sD4vQdoTlA6S12px7H8w513xCIO5Bn3aEk0xmGcYlYVVg6Ypr009vO8+4zHBvlIzDbzmYExQ9ybMIcoTBwuYEb5GCBQpprqEwjTjLEKodMC8RKg0tNYFJd0pht/SB9jDAjKJauPP+JqLkgrQccvl7Q7Hrs9ifUXUtUTV0RkH7foB0bImzbSBTPhhaKx0sCEu/fwcevBMWTPbS6wmMFXtYfUP4vZS+YInyEEtUXZM2AduzRDQMSbW5n+Ss9QWFRgTA28MQWvmrgshyuLyESDZHmYFFGhvZHv9ITlJCX4LLCypVTTdoXiKW3xbY07LfHEpKFYGXHbPsUoRfklLIfb+kMg2KPVBu8fTvgcBkxHlqMx5babtegGWqcP484vQ4Yjx1Orz24LO5XzxreoJy+38AE4zs2akAiDli5Ux3OdTnX48qZ+vaGPEDJP6BoyMtfJN5dkfRHlF2Hpj4hEuW/Pm933c+RHlg/yMB4CaZHkk0/iBIqYJVruCz5D0P1Y4QZImEgVIWXZYi1E9PdXrqKHgGb2rzYaqY9pz+/Mk9QrIEfG/DhCpYPUHmJ09uI/tCh7mq6ERYI9dsKh3OP3alDNzbUPkGZrp68FXY8fgFvL0j2V4iiRZq09HiwKKV6tAp4hiCexHh2+zuwKf8DlqfCRtnANVMAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="weatherforecast-response" title="weatherforecast-response" src="/static/c4e9e3bb3df97b02e57b6b3d73bfa123/5a190/weatherforecast-response.png" srcset="/static/c4e9e3bb3df97b02e57b6b3d73bfa123/772e8/weatherforecast-response.png 200w,
+/static/c4e9e3bb3df97b02e57b6b3d73bfa123/e17e5/weatherforecast-response.png 400w,
+/static/c4e9e3bb3df97b02e57b6b3d73bfa123/5a190/weatherforecast-response.png 800w,
+/static/c4e9e3bb3df97b02e57b6b3d73bfa123/d56e1/weatherforecast-response.png 1130w" sizes="(max-width: 800px) 100vw, 800px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy" decoding="async">
+    </span></a></p>
+<p>VS Code를 사용하면서 몇가지 익스텐션이 제공하는 기능을 사용했다. 문제가 있거나 리팩토링 제안이 있는 곳에 노란전구가 표시된다. 필요한 네임스페이스를 추가하여 문제를 해결하거나, 생성자의 파라미터로부터 필드를 초기화하는 리팩토링 기능이 그 예다.</p>
+<p>Visual Studio에서 사용하던 단축키를 시도해 보면 재밌는 기능을 찾아낼 수 있다. 예를 들어, <code>Ctrl + Shift + B</code> 로 빌드하려고 하면 커맨트 팔레트에서 build 태스크를 추천해 준다.</p>
+<h2>마무리</h2>
+<p>VS Code의 익스텐션을 활용하는 모습을 많이 담지 못했지만, 비주얼스튜디오에서 쓰던 방식을 시도해 보면서 새 툴에 대해 하나하나 알아가는 재미를 느꼈으면 한다. 원하는 기능은 추가 익스텐션을 설치해서 해결할 수 있으리라 믿는다.</p>
+<p>이번에 이직하면서 많이 느낀거지만 Containerisation 기술을 많이 요구하는 추세다. 도커는 개념도 어렵지 않고 사용법도 쉬워서 적은 시간을 투자하더라도 제법 큰 효과를 얻을 수 있으니 자신의 경력에 추가하기를 바란다.</p>
+<p>마지막으로 맥에서 닷넷코어를 개발하는 분들에게, 그리고 맥북을 사용하고 싶었지만 망설였던 분들에게 이 글이 도움이 되기를 바란다.</p>
+<h2>참고자료</h2>
+<ul>
+<li><a href="https://www.amazon.co.uk/gp/product/B07YLXFGBS/ref=ppx_yo_dt_b_d_asin_title_o06?ie=UTF8&#x26;psc=1">C# 8.0 and .NET Core 3.0 – Modern Cross-Platform Development</a></li>
+<li><a href="https://docs.docker.com/docker-hub/">Docker Hub Quickstart</a></li>
+<li><a href="https://medium.com/@wkrzywiec/database-in-a-docker-container-how-to-start-and-whats-it-about-5e3ceea77e50">Database in a Docker container</a></li>
+<li><a href="https://docs.microsoft.com/en-us/ef/core/get-started/?tabs=netcore-cli">EF Core tutorial</a></li>
+<li><a href="http://blog.jakeymvc.com/vscode/">3년전 비슷한 주제의 글</a></li>
+</ul></div></div></div><footer class="footer-module--container--5GliC"><div class="footer-module--footer--Z1xkR">My new Gatsby Blog 2019</div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/언제까지-비주얼스튜디오만-쓸거야/";window.___webpackCompilationHash="88e49b85817f30ddf12b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-82df740e7cad994d0af0.js"],"app":["/app-0c385512a1f64cc6d7f4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-0e83c4e916c6a584f6a1.js"],"component---src-pages-about-js":["/component---src-pages-about-js-236d410604323c4aaa79.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1dae7a4e745c60b08d1e.js"],"component---src-templates-post-js":["/component---src-templates-post-js-35bc90d60597e8e6512f.js"]};/*]]>*/</script><script src="/polyfill-82df740e7cad994d0af0.js" nomodule=""></script><script src="/app-0c385512a1f64cc6d7f4.js" async=""></script><script src="/framework-ece53a4dfa3f421a9587.js" async=""></script><script src="/webpack-runtime-3ad450e46c3b8745f8f9.js" async=""></script></body></html>
