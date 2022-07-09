@@ -26,7 +26,7 @@ services.AddApiVersioning(config =>
 
 Specify the default API version as 1.0 and use the version if the client hasn’t specified the API version in the request. To advertise the available versions, set the ReportApiVersions property to true. Then, the client gets a response header, `api-supported-versions` with the versions.
 
-![api-supported-versions.png](../images/api-en/api-supported-versions.png)
+![api-supported-versions.png](../images/api/api-supported-versions.png)
 
 ## Version specific Controllers and Actions
 When the clients make request for a specific version of an API endpoint, the request should be redirected to the appropriate controller or action handling the requested API version. There are multiple approaches on how to assign controllers and actions to handle version specific requests. 
@@ -79,7 +79,7 @@ My API requires, in some cases, the query string to provide the paging details a
 ### Using request headers
 Another approach to versioning an API is using request headers where a header value specifies the API version. Unlike the URL path param and query string approach, using request header doesn't require fiddling around with the URLs on the client side. The downside to using request headers for versioning is that the versioning option is not explicitly visible to the client at a first glance.
 
-![x-version](../images/api-en/x-version.png)
+![x-version](../images/api/x-version.png)
 
 ### Using media type (Accept header)
 Another approach of version the API is using the content negotiation process provided by HTTP. When client requests a resource using the Accept header, they could explicitly include the version number in the media type itself.
@@ -122,7 +122,7 @@ public class JakeController : ControllerBase
 }
 ```
 
-![api-deprecated-versions](../images/api-en/api-deprecated-versions.png)
+![api-deprecated-versions](../images/api/api-deprecated-versions.png)
 
 ## Conclusion
 

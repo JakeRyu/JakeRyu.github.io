@@ -29,7 +29,7 @@ services.AddApiVersioning(config =>
 
 `AssumeDefaultVersionWhenUnspecified` 속성을 `true`로 활성화하면, 클라이언트 요청에 버전 정보가 없을 경우, 기본 버전을 사용하도록 해준다. 이미 상당수의 API를 개발한 후 버전관리를 시작할 때 유용하다. `ReportApiVersions` 속성은 아래 그림과 같이 서버에서 제공하고 있는 API 버전을 보여준다. 응답 헤더에 `api-supported-verions`가 추가된 걸 확인할 수 있다.
 
-![api-supported-versions.png](../images/api-en/api-supported-versions.png)
+![api-supported-versions.png](../images/api/api-supported-versions.png)
 
 위 설정에서는 헤더에서 버전정보를 읽도록 `HeaderApiVersionReader`를 사용했지만, 시나리오에 맞추어 `ApiVersionReader` 속성을 다르게 지정한다.
 
@@ -93,7 +93,7 @@ URL이 지저분해지는 단점이 있지만 가장 간단하고 직관적인 �
 
 클라이언트에서 요청을 만들때, 사용자 헤더를 사용하여 버전을 지정한다.
 
-![x-version](../images/api-en/x-version.png)
+![x-version](../images/api/x-version.png)
 
 사용자 헤더명을 서버 설정에서 정의한다.
 
@@ -157,7 +157,7 @@ public class JakeController : ControllerBase
 }
 ```
 
-![api-deprecated-versions](../images/api-en//api-deprecated-versions.png)
+![api-deprecated-versions](../images/api//api-deprecated-versions.png)
 
 ## 결론
 

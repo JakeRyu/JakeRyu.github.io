@@ -1,5 +1,8 @@
 ---
 title: "Swagger를 이용한 API 문서관리"
+date: "2020-04-08"
+image: "https://source.unsplash.com/150x150/?swagger"
+keywords: "swagger"
 excerpt_separator: "<!--more-->"
 categories:
   - ko-KR
@@ -14,14 +17,15 @@ tags:
 
 ## API 멀티 버전
 
-이 글은 API가 멀티 버전을 현재 지원하거나 지원할 계획이 있을 때 유용하다. 이전 글, [API 버전관리]({% post_url 2020-04-05-api-버전관리 %})를 참고하여 독자의 API에 멀티 버전을 적용하면 예시를 따라 다중 문서 시스템을 얻게될 것이다.
+이 글은 API가 멀티 버전을 현재 지원하거나 지원할 계획이 있을 때 유용하다. 이전 글, [API 버전관리](/api-버전관리)를 참고하여 독자의 API에 멀티 버전을 적용하면 예시를 따라 다중 문서 시스템을 얻게될 것이다.
 
 ## API Explorer
 
 첫번째 해결할 과제는 혼재하는 API의 버전들을 파악하는 것이다. `Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer` 패키지를 설치하여 다음과 같이 구현한다.
 
-[ConfigureServices() @Startup.cs]
 ```csharp
+// Startup.cs 에서 ConfigureServices()
+
 // Api Explorer를 사용할 때, 버전 포맷도 같이 지정한다. 예시는 v2.0.1 처럼 major.minor.build 포맷을 의미한다.
 services.AddVersionedApiExplorer(options => { options.GroupNameFormat = “’v’VVV”; });
 
@@ -44,7 +48,7 @@ services.AddSwaggerGen(options =>
     using var scope = scopeFactory.CreateScope();
     var serviceProvider = scope.ServiceProvider;
     var descriptionProvider = serviceProvider.GetRequiredService<IApiVersionDescriptionProvider>();
-        
+
     foreach (var description in descriptionProvider.ApiVersionDescriptions)
     {
         options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
@@ -98,7 +102,7 @@ public static class SwaggerServiceExtensions
                 options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
             }
         });
-        
+
         return services;
     }
 
@@ -117,7 +121,7 @@ public static class SwaggerServiceExtensions
 
         return app;
     }
-    
+
     // 헬퍼 메서드
     static OpenApiInfo CreateInfoForApiVersion(ApiVersionDescription description)
     {
@@ -137,6 +141,7 @@ public static class SwaggerServiceExtensions
 ```
 
 따라서, Startup.cs는 다음과 같이 정리된다.
+
 ```csharp
   public void ConfigureServices(IServiceCollection services)
   {
@@ -167,14 +172,14 @@ public static class SwaggerServiceExtensions
       app.UseSwaggerDocumentation(provider);
 
       // 이하 생략
-  }  
+  }
 ```
 
 ## 결론
 
-이제 경고에 대한 걱정없이 Swagger를 이용한 멀티버전 문서를 갖추게 됐다. 
+이제 경고에 대한 걱정없이 Swagger를 이용한 멀티버전 문서를 갖추게 됐다.
 
-![swagger-v1](../../images/swagger-v1.png)
-![swagger-v11](../../images/swagger-v11.png)
+![swagger-v1](../images/api/swagger-v1.png)
+![swagger-v11](../images/api/swagger-v11.png)
 
-현재 멀티버전 API가 없어도 예시로 구현된 코드는 여전히 유효하다. API Explorer의 탐색결과에 따라 문서가 작성되기 때문에 단일버전이라고 해서 문제가 되지는 않는다. 어차피 Swagger 설정은 한번 해야하는 일인데 이왕지사 버전 관리까지 구현해 두면 좋지않을까. 
+현재 멀티버전 API가 없어도 예시로 구현된 코드는 여전히 유효하다. API Explorer의 탐색결과에 따라 문서가 작성되기 때문에 단일버전이라고 해서 문제가 되지는 않는다. 어차피 Swagger 설정은 한번 해야하는 일인데 이왕지사 버전 관리까지 구현해 두면 좋지않을까.
