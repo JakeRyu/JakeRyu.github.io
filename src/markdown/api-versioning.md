@@ -1,8 +1,8 @@
 ---
 title: "API Versioning"
 date: "2020-04-03"
-image: "https://picsum.photos/150/150"
-keywords: "api"
+image: "https://picsum.photos/150/150?contract"
+keywords: "version"
 excerpt_separator: "<!--more-->"
 categories:
   - en-GB

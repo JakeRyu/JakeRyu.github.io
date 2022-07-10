@@ -1,8 +1,8 @@
 ---
 title: "Swagger를 이용한 API 문서관리"
 date: "2020-04-08"
-image: "https://source.unsplash.com/150x150/?swagger"
-keywords: "swagger"
+image: "https://source.unsplash.com/150x150/?document"
+keywords: "document"
 excerpt_separator: "<!--more-->"
 categories:
   - ko-KR

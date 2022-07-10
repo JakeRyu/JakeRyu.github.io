@@ -18,7 +18,7 @@ const ArticleList = () => (
                 title
                 image
                 keywords
-                date(formatString: "MMMM YYYY")
+                date
               }
               excerpt
             }
@@ -32,6 +32,7 @@ const ArticleList = () => (
           <Article
             id={node.id}
             to={node.fields.slug}
+            thumbnail={node.frontmatter.image}
             keywords={node.frontmatter.keywords}
             title={node.frontmatter.title}
             date={node.frontmatter.date}

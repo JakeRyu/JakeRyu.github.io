@@ -12,21 +12,21 @@ const Post = ({ data }) => {
   return (
     <Layout>
       <div className={styles.container}>
-        <Title text={post.frontmatter.title}></Title>
         <div
           style={{
             width: "100%",
-            height: "200px",
+            height: "640px",
             backgroundColor: "#fafafa",
             backgroundImage:
-              "Url(https://source.unsplash.com/960x200/?" +
-              post.frontmatter.keywords +
-              ")",
+              "Url(https://picsum.photos/seed/" +post.frontmatter.keywords+ "/960/640)",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             marginBottom: "30px",
           }}
         ></div>
+
+        <Title text={post.frontmatter.title}></Title>
+
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: post.html }}

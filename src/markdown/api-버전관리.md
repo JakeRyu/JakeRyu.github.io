@@ -1,8 +1,8 @@
 ---
 title: "API 버전관리"
 date: "2020-04-05"
-image: "https://picsum.photos/150/150"
-keywords: "api"
+image: "https://picsum.photos/150/150?contract"
+keywords: "version"
 excerpt_separator: "<!--more-->"
 categories:
   - ko-KR
