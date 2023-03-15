@@ -1,7 +1,11 @@
 ---
 title:  "닷넷 코어 (.NET Core)"
 date:   "2015-07-02"
+image: "https://picsum.photos/150/150?core"
 keywords: "core"
+excerpt_separator: "<!--more-->"
+categories:
+  - ko-KR
 tags:
   - aspnet-core
 ---
