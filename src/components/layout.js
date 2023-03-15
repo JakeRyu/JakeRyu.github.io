@@ -4,15 +4,11 @@ import Header from './header.js'
 import Footer from './footer.js'
 
 const Layout = ({ children }) => (
-   <div className={styles.container}>
-      <Header />
-      <div className={styles.content}>
-         {children}
-      </div>
-      <Footer>
-         My new Gatsby Blog 2019
-    </Footer>
-   </div>
+  <div className={styles.container}>
+    <Header />
+    <div className={styles.content}>{children}</div>
+    <Footer>Life is a journey of learning. </Footer>
+  </div>
 )
 
 export default Layout

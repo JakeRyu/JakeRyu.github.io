@@ -5,15 +5,11 @@ import ArticleList from '../components/article-list'
 
 const Index = () => (
   <Layout>
-    <Title text="Welcome" />
+    <Title text="Code with Confidence" />
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    In this blog, I'll be discussing the benefits of clean code, test-driven development (TDD), 
+    and refactoring for software developers. These practices are essential for building maintainable, scalable, 
+    and efficient applications, and I'm excited to share my insights and experiences with you.
     </p>
     <ArticleList />
   </Layout>
